@@ -10,6 +10,7 @@ pipeline {
                 stage('Lint') {
                     steps {
                         script {
+                            sh "cat Makefile"
                             sh "make cs"
                         }
                     }
