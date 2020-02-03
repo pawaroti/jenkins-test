@@ -3,12 +3,6 @@
 pipeline {
     agent any
 
-    options {
-        timestamps()
-        ansiColor('xterm')
-        parallelsAlwaysFailFast()
-    }
-
     stages {
         stage('Checks') {
             parallel {
